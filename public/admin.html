@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="/static/styles.css">
+<a class="button" href="http://localhost:3000/">Back to Home Page</a>
+<br>
+<form action="/questions" method="POST">
+    <input type="text" placeholder="Question" name="question" required> <br>
+    <input type="text" placeholder="Option-A" name="a" required> <br>
+    <input type="text" placeholder="Option-B" name="b" required> <br>
+    <input type="text" placeholder="Option-C" name="c" required> <br>
+    <select name="correct" id="correct"  required>
+        <option value="blank">Select Correct Option</option>
+        <option value="a">a</option>
+        <option value="b">b</option>
+        <option value="c">c</option>
+    </select>
+    <button type="submit" id="submitForm">Submit</button>
+</form>
+<div>
+    <ul id="question" class="question"></ul>
+</div>
+<script src="/static/admin.js"></script>
